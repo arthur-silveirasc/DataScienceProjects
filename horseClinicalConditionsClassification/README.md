@@ -1,4 +1,4 @@
-# horseClinicalConditions
+# horseClinicalConditionsClassification
 Classification problem using SVM, decision tree, random forest and KNN, measuring the accuracy of each one (the best was random forest, with an accuracy of 98%). The goal is to predict if, given some medical conditions, a horse can survive or not. The dataset is available at Kaggle.
 ## Getting Started
 The dataset contains 27 categorical and numeric attributes that describe the health condition of horses sample. Three output classes indicate what happened to the horse: died, lived or was submitted to euthanasia. 
