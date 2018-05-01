@@ -11,4 +11,4 @@ Excel 2010 and Matlab 2017b
 ## Authors
 * **Arthur Silveira**
 ## Acknowledgments
-Thanks to Alexandre Ashade, Statistical Methods for Decision Supporting teacher of BI-Master 2017.2 course at PUC-Rio (Brazil), for the script inputs.
+Thanks to Alexandre Ashade, Statistical Methods for Decision Supporting teacher of BI-Master 2017.2 course at PUC-Rio (Brazil), for the problems suggested.
