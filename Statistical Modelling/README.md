@@ -6,7 +6,7 @@ Three players get into a room and one blue or red hat is placed on the head of e
 
 A simple strategy could be that the group agrees on a player, previously selected, guessing her own hat and the other two simply passing their turns. Therefore, the probability of at least one person guessing and no one giving a wrong answer equals to 1/2. Suggest a strategy with a larger success probability than the one given and calculate it.
 
-### Problema #2 (bayesian statistcs):
+### Problem #2 (bayesian statistcs):
 Mary is going to get married tomorrow at a open air ceremony in the desert. In the last years, it has rained only 5 days per year where the ceremony will take place.
 
 Unfortunately, the weather reports predict a rainy day on the big day. It is known that, when it has indeed rained, the weather reports predicted rain in 90% of these cases and, when it hasn't rained, the forecasts gave rain in 10% of these cases. What is the probability that it won't rain on the wedding day? 
