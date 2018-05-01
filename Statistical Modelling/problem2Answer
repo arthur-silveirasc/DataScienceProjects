@@ -1,0 +1,20 @@
+O problema pede a probabilidade de que irá chover no dia do casamento, dado que a previsão é de chuva.
+Vamos considerar os seguintes eventos:
+C: chove, de fato
+P: previsão é de chuva
+Pelo enunciado, temos as seguintes informações:
+p(C) = 5 / 365
+p(C) = 360 / 365
+p(P|C) = 0,9
+p(P|C) = 0,1
+
+Para acharmos a probabilidade de que irá chover no dia do casamento, dado que a previsão é de chuva (ou seja, P(C|P)), utilizamos as seguintes regras bayesianas:
+p(C|P) = p(P|C) * p(C) / p(P),
+sendo que
+p(P) = p(P|C)*p(C) + p(P|C)*p(C)
+
+Assim, fazemos:
+p(P) = 0,9 * 5/365 + 0,1*360/365 = 0,110959
+p(C|P) = 0,9 * 5/365 /0,110959 = 0,1111 = 11%
+
+Portanto, a probabilidade de que irá chover no dia do casamento, dado que a previsão é de chuva, é de 11%.
