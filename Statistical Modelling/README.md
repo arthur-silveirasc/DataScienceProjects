@@ -11,6 +11,11 @@ Mary is going to get married tomorrow at a open air ceremony in the desert. In t
 
 Unfortunately, the weather reports predict a rainy day on the big day. It is known that, when it has indeed rained, the weather reports predicted rain in 90% of these cases and, when it hasn't rained, the forecasts gave rain in 10% of these cases. What is the probability that it won't rain on the wedding day? 
 
+### Problem #3 (Naive Bayes classifier):
+The goal here is to classify, using a Naive Bayes classifier, the type of 30m x 30m tranches coverage of a large forest. To do this, it's available a dataset with multiples attributes, which are described in the "UCI Machine Learning Repository_ Covertype Data Set.pdf" file. You must select which attributes you judge most relevant and model them as discrete or continuous random variables, defining them with their respective probability mass - or density - function.
+
+To perform such prediction, use the train dataset "covtype_train.xlsx". The answer of the problem is to be delivered in the last column of the "covtype_test.xlsx" file
+
 ### Prerequisites
 Excel 2010 and Matlab 2017b
 ## Authors
