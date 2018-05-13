@@ -22,6 +22,8 @@ Tips:
 3) Start distinguishing which attributes you'll model as continuous random variable or as discrete random variables;
 4) Then, plot the histograms of these attributes in Excel or Matlab, using the hist. function, and compare then to other distribution plots. Decide which one is the best fit.
 
+### Problem 4 (hypothesis testing)
+A seer says that is capable of guessing the shape of a card without looking at it. You propose the following challenge: in a normal deck of 52 cards, you would draw, at random, 100 cards, one by one, ask the shape to the seer and returning it to the deck. From this experiment, you have to model a hypothesis testing to verify if the seer has the gift that she claims to have. In your test, choose the smaller critical region so that the type I error be less tha 5%.
 
 ### Prerequisites
 Excel 2010 and Matlab 2017b
