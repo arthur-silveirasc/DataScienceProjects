@@ -1,0 +1,17 @@
+Vamos determinar que:
+H0: a vidente não tem o dom de adivinhar o naipe de uma carta sem olhar para ela
+H1: a vidente tem esse dom
+
+A estatística de testes será o número de acertos da vidente, N. O primeiro passo é descobrir a distribuição de probabilidade de N, condicionado ao fato de H0 ser verdadeira.
+
+Seja p a probabilidade dela acertar um naipe e seja (1-p) a probabilidade dela errar. A função massa de probabilidade do número de acertos k é uma distribuição binomial, em que:
+
+ρN|H0(k) = p(N = k|H0) = (100 k) * pk * (1-p)100 - k
+
+Se a hipótese nula for verdadeira, a vidente está fazendo adivinhações aleatórias com base nos quatro naipes, em que p = ¼. O número de acertos, então, será próximo de 25 (100 * ¼). Logo, se o número de acertos for maior do que 25 + N*, em que N* é o limiar crítico, podemos rejeitar a hipótese nula.
+
+A probabilidade de erro do tipo I é dada por e terá que ser menor ou igual a 5%:
+
+α = p(N ≥ 25 + N* | H0) = ∑k=25+N*100 = ρN|H0(k) ≤ 5%
+
+Esse problema pode ser resolvido por tentativa e erro para N* Ε {0,1,2,...,75}. Usando o script questao4.m, vemos que N* = 8 – sendo N ≥ 33 – e, neste caso, α = 4,46%. Portanto, se o vidente conseguir acertar o naipe de ao menos 33 cartas, então, com probabilidade de 4,46%, podemos rejeitar H0 em favor de H1. Ou seja, podemos afirmar que, de fato, a vidente tem a habilidade que diz ter.
