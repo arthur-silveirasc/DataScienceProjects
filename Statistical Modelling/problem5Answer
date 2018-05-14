@@ -1,0 +1,11 @@
+O universo total de sequências possíveis (a1, a2, ..., a7) a partir dos elementos 1, 2,...,10, é representada por 10^7,
+em que os valores possíveis para cada elemento da sequência vão de 1 até 10.
+
+Em relação à contagem de sequências sem elementos repetidos, basta realizar uma permutação de 10 elementos, 
+com, no máximo, 7 posições disponíveis. O valor final é o resultado de 10 x 9 x 8 x 7 x 6 x 5 x 4.
+
+Assim, a probabilidade de escolhermos uma sequência que não contenha elementos repetidos é dada por:
+
+A = evento em que escolho uma sequência que não contém elementos repetidos
+
+P(A) = 10! / (3!* 10^7) = 6,05%
