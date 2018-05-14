@@ -1,5 +1,5 @@
 # Statistical Modelling
-Here is enlisted four problems - and its resolutions - regarding key topics in statistical modelling, such as Bayes Theorem, hypotheses testing and Naive Bayes classification.
+Here is enlisted eight problems - and its resolutions - regarding key topics in statistical modelling, such as Bayes Theorem, hypotheses testing and Naive Bayes classifier.
 ## Getting Started
 ### Problem #1 (bayesian statistcs):
 Three players get into a room and one blue or red hat is placed on the head of each one. The colour of the hat is determined by a throw of a honest coin. No communication between these players is allowed, except a previous strategy alignment before they get into the room. As soon as these players have the chance to look at the hats of the other two, all three have to guess, simultaneously, the colour of their own hats or pass their own turn. The challenge consists in finding a group strategy that maximizes the probability of, at least, one person guessing and no one giving a wrong answer.
@@ -24,6 +24,9 @@ Tips:
 
 ### Problem 4 (hypothesis testing)
 A seer says that is capable of guessing the shape of a card without looking at it. You propose the following challenge: in a normal deck of 52 cards, you would draw, at random, 100 cards, one by one, ask the shape to the seer and returning it to the deck. From this experiment, you have to model a hypothesis testing to verify if the seer has the gift that she claims to have. In your test, choose the smaller critical region so that the type I error be less than 5%.
+
+### Problem 5 (basic probability)
+With the elements 1,2,...,10 are formed all the sequences (a1,a2,...,a7). Choosing randomly one of these sequences, what is the probability of a chosen sequence not containing repeated elements?
 
 ### Prerequisites
 Excel 2010 and Matlab 2017b
