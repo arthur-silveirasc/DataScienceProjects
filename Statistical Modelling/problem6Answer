@@ -1,0 +1,13 @@
+O universo total de resultados para a seleção de k bolas é dado por binomial das 16 bolas, k a k. 
+
+Para os resultados possíveis em que r bolas brancas sejam escolhidas, imaginamos que existam duas possibilidades dentro das 
+k bolas selecionadas: 1) sacar bolas brancas e 2) sacar bolas não brancas. No primeiro caso, os resultados são dados por 
+binomial de 10, r a r – ou seja, podemos combinar 10 bolas brancas de diferentes r formas –, enquanto que, no segundo caso, 
+teremos 6 bolas pretas que podem ser combinadas de diferentes  k – r formas – ou seja, do total de k bolas escolhidas e r bolas brancas 
+sacadas, sobram k – r formas para se sacar bolas pretas. Assim, trata-se de um binomial de 6, k – r a k – r.
+
+Logo, a probabilidade de que exatamente r bolas escolhidas, do total de k sacadas, sejam brancas é dada por:
+
+A = bola é branca
+
+P(A) = (10     r) * (6     k – r) / (16     k)
