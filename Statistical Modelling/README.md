@@ -28,6 +28,9 @@ A seer says that is capable of guessing the shape of a card without looking at i
 ### Problem 5 (basic probability)
 With the elements 1,2,...,10 are formed all the sequences (a1,a2,...,a7). Choosing randomly one of these sequences, what is the probability of a chosen sequence not containing repeated elements?
 
+### Problem 6 (basic probability)
+From a box containing 10 white balls and 6 black balls, it's selected, at random, k balls. What is the probability of exactly r balls be white, under the 0 <= k - r <= 6 and 0 <= k <= 10 conditions?
+
 ### Prerequisites
 Excel 2010 and Matlab 2017b
 ## Authors
