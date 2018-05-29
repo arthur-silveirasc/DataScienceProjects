@@ -4,22 +4,22 @@ close all;
 clc
 
 %%
-% transformaÁ„o da base treino. Esse arquivo contÈm apenas as 10.000
-% primeiras linhas da base disponibilizada no Classroom, j· que houve
+% transforma√ß√£o da base treino. Esse arquivo cont√©m apenas as 10.000
+% primeiras linhas da base disponibilizada no Classroom, j√° que houve
 % uma demora acima do normal para leitura da base com as 400.000 linhas
 [train_xls,train_xls_tranformed] = load_database('covtype_train.xlsx');
 
 %%
-% transformaÁ„o da base teste
+% transforma√ß√£o da base teste
 [test_xls, test_xls_tranformed] = load_database('covtype_test.xlsx');
 
 
 %% FASE de treino
 % escolhendo as colunas a serem utilizadas como atributos. 
-% para gerar os histogramas, foi usada a vari·vel
+% para gerar os histogramas, foi usada a vari√°vel
 % columns = [2 3 4 5 6 7 8 9 10 11 12 13]
-% por tentativa e erro, avaliando a acur·cia ao final do script, chegamos
-% ‡s colunas abaixo
+% por tentativa e erro, avaliando a acur√°cia ao final do script, chegamos
+% √†s colunas abaixo
 columns = [2 3 13];
 groups = unique(train_xls_tranformed(:,end));
 
@@ -27,12 +27,12 @@ groups = unique(train_xls_tranformed(:,end));
 prior = histc(train_xls_tranformed(:,end), groups) / ...
     length(train_xls_tranformed(:,end));
 
-% utilizaÁ„o dos dados transformados
+% utiliza√ß√£o dos dados transformados
 data = train_xls_tranformed(:, columns);
 
 % histograma de cada atributo para avaliar, visualmente, 
-% de acordo com o formato do gr·fico, qual densidade de probabilidade 
-% - ou funÁ„o massa de probabilidade - mais se adequa ao atributo
+% de acordo com o formato do gr√°fico, qual densidade de probabilidade 
+% - ou fun√ß√£o massa de probabilidade - mais se adequa ao atributo
 
 %atributo elevation
 %figure
@@ -86,7 +86,7 @@ for group=1:length(groups)
     data_for_group_idx = train_xls_tranformed(:,end) == groups(group);
     data_for_group=data(data_for_group_idx, :);
        
-    % estima os par‚metros por m·xima verosssimilhanÁa.
+    % estima os par√¢metros por m√°xima verosssimilhan√ßa.
     pd_2(group) = fitdist(data_for_group(:,1), 'loglogistic');
     pd_3(group) = fitdist(data_for_group(:,2), 'kernel', 'kernel','epanechnikov');
     pd_13(group) = fitdist(data_for_group(:,3), 'rayleigh');
@@ -101,17 +101,17 @@ test = train_xls_tranformed(last_row+1:end, :);
 % 80% treino
 train_xls_tranformed = train_xls_tranformed(1:last_row, :);
 
-%% faz a classificaÁ„o do treino
+%% faz a classifica√ß√£o do treino
 data_test = test(:, columns);
 dists = {pd_2, pd_3, pd_13};
 [class, ranks] = classify_naive_bayes(data_test, dists, groups, prior);
 
-%% realizar o c·lculo da acur·cia
+%% realizar o c√°lculo da acur√°cia
 gabarito = test(:,14);
 resultado = sign(gabarito - class);
 acerto = sum(resultado(:) == 0)/length(resultado)
 
-%% faz a classificaÁ„o para teste
+%% faz a classifica√ß√£o para teste
 data_test = test_xls_tranformed(:, columns);
 dists = {pd_2, pd_3, pd_13};
 [class, ranks] = classify_naive_bayes(data_test, dists, groups, prior);
