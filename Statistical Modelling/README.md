@@ -6,16 +6,6 @@ Mary is going to get married tomorrow at a open air ceremony in the desert. In t
 
 Unfortunately, the weather reports predict a rainy day on the big day. It is known that, when it has indeed rained, the weather reports predicted rain in 90% of these cases and, when it hasn't rained, the forecasts gave rain in 10% of these cases. What is the probability that it won't rain on the wedding day? 
 
-### Problem 3 (Naive Bayes classifier):
-The goal here is to classify, using a Naive Bayes classifier, the type of 30m x 30m tranches coverage of a large forest. To do this, it's available a dataset with multiples attributes, which are described in the "UCI Machine Learning Repository_ Covertype Data Set.pdf" file. You must select which attributes you judge most relevant and model them as discrete or continuous random variables, defining them with their respective probability mass - or density - function.
-
-To perform such prediction, use the train dataset "covtype_train.xlsx". The answer of the problem is to be delivered in the last column of the "covtype_test.xlsx" file.
-
-Tips:
-1) You don't need to use all the data available in the training dataset, nor even all the dataset attributes;
-2) All the columns identified as binary encoding (one-hot enconding) don't need to be used on that form. As a matter of fact, it could be more interesting converting "Wilderness_Area" to one integer variable and do the same process to "Soil_Type";
-3) Start distinguishing which attributes you'll model as continuous random variable or as discrete random variables;
-4) Then, plot the histograms of these attributes in Excel or Matlab, using the hist. function, and compare then to other distribution plots. Decide which one is the best fit.
 ### Problem 4 (hypothesis testing)
 A seer says that is capable of guessing the shape of a card without looking at it. You propose the following challenge: in a normal deck of 52 cards, you would draw, at random, 100 cards, one by one, ask the shape to the seer and returning it to the deck. From this experiment, you have to model a hypothesis testing to verify if the seer has the gift that she claims to have. In your test, choose the smaller critical region so that the type I error be less than 5%.
 ### Problem 5 (basic probability)
